@@ -13,6 +13,7 @@ import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.compone
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DigitalClockComponent } from './components/digital-clock/digital-clock.component';
 
 // AoT requires an exported function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
@@ -24,6 +25,7 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
     TopNavBarComponent,
     NavBarComponent,
     SettingsComponent,
+    DigitalClockComponent,
   ],
   imports: [
     BrowserModule,

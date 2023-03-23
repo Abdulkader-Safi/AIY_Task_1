@@ -13,9 +13,11 @@
       display: flex;
       flex-direction: column;
       padding-left: 20px;
+      width: 12%;
 
-      h2 {
+      h1 {
         color: #ffffff;
+        font-size: xx-large;
       }
 
       p {
@@ -25,9 +27,35 @@
   }
 
   .body-nav-quick-data {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    gap: 3px;
+
+    .data-info {
+      font-size: larger;
+      color: #a9a9ab;
+      margin: 5px;
+      padding: 15px;
+      background-color: #1d2027;
+      border-radius: 7.5px;
+
+      .output {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .body-nav-digital-lock {
+    width: 8%;
   }
 
   .close-min-btn {
+    width: 7%;
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -40,6 +68,7 @@
 
       li {
         margin-left: 8px;
+        color: #cfcfcf;
 
         img {
           width: 15px;
