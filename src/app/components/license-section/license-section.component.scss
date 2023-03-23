@@ -1,0 +1,56 @@
+.license-section-page {
+  height: fit-content;
+  width: 80vw;
+  font-size: large;
+  margin: 0 10px;
+
+  .license-key {
+    width: 100%;
+    margin: 0 10px;
+
+    h5 {
+      padding: 10px;
+    }
+
+    .input {
+      // background-color: #15161b;
+      font-size: x-large;
+      text-decoration: none !important;
+
+      display: flex;
+      align-items: center;
+      justify-self: space-between;
+      border-radius: 5px;
+
+      input {
+        width: 80%;
+        background-color: #15161b;
+        border: none;
+        height: fit-content;
+        align-items: center;
+        margin: 0 15px;
+        font-size: xx-large;
+        border-radius: 5px;
+        color: #ffffff;
+      }
+
+      .icon {
+        color: #ffffff;
+        background-color: #25252f;
+        padding: 4px;
+        border-radius: 15%;
+      }
+
+      button {
+        width: 200px;
+        margin: 0 20px;
+
+        border: none;
+        background-color: #15161b;
+        border-radius: 7px;
+        padding: 10px;
+        color: #fff;
+      }
+    }
+  }
+}

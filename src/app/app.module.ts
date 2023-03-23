@@ -14,6 +14,11 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DigitalClockComponent } from './components/digital-clock/digital-clock.component';
+import { LicenseSectionComponent } from './components/license-section/license-section.component';
+import { DataFilterComponent } from './components/data-filter/data-filter.component';
+import { DataDigramComponent } from './components/data-digram/data-digram.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 // AoT requires an exported function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
@@ -26,6 +31,11 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
     NavBarComponent,
     SettingsComponent,
     DigitalClockComponent,
+    LicenseSectionComponent,
+    DataFilterComponent,
+    DataDigramComponent,
+    NotificationsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
