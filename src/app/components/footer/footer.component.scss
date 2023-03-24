@@ -3,6 +3,27 @@
   width: 80vw;
   font-size: large;
   margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  background-color: antiquewhite;
+  div {
+    button {
+      font-size: large;
+      padding: 9px;
+      border-radius: 7.5px;
+      background-color: #27282d;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+      align-items: center;
+      gap: 5px;
+      padding: 15px 20px;
+
+      &:hover {
+        background-color: #353844;
+      }
+    }
+  }
 }
