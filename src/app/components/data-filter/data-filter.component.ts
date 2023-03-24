@@ -7,8 +7,8 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./data-filter.component.scss'],
 })
 export class DataFilterComponent implements OnInit {
-  _num1 = 10;
-  _num2 = 10;
+  num1 = 10;
+  num2 = 10;
   _step = 1;
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
@@ -16,14 +16,14 @@ export class DataFilterComponent implements OnInit {
   ngOnInit(): void {}
 
   incrementNum1Value(step: number = 1): void {
-    const inputValue = this._num1 + step;
+    const inputValue = this.num1 + step;
 
-    this._num1 = inputValue;
+    this.num1 = inputValue;
   }
 
   incrementNum2Value(step: number = 1): void {
-    const inputValue = this._num2 + step;
+    const inputValue = this.num2 + step;
 
-    this._num2 = inputValue;
+    this.num2 = inputValue;
   }
 }
