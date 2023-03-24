@@ -1,7 +1,96 @@
 <div class="data-filter">
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <table>
+    <colgroup>
+      <col span="1" style="width: 25%" />
+      <col span="1" style="width: 12.5%" />
+      <col span="1" style="width: 12.5%" />
+      <col span="1" style="width: 15%" />
+      <col span="1" style="width: 15%" />
+      <col span="1" style="width: 10%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><h5>Default Nike Region</h5></td>
+        <td><h5>Open Browser</h5></td>
+        <td><h5>Open Harvesters</h5></td>
+        <td><h5></h5></td>
+        <td><h5></h5></td>
+        <td class="split">
+          <h5>Dark</h5>
+          <h5>Light</h5>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select class="form-control">
+            <option>Portugal</option>
+            <option>Lebanon</option>
+            <option>Kuwait</option>
+          </select>
+        </td>
+        <td>
+          <div class="input">
+            <button
+              type="submit"
+              class="left"
+              (click)="incrementNum1Value(-_step)"
+            >
+              <fa-icon [icon]="faArrowLeft"></fa-icon>
+            </button>
+            <input
+              type="number"
+              matInput
+              [(ngModel)]="_num1"
+              data-type="number"
+              class="inputField"
+              value="10"
+              disabled
+            />
+            <button
+              type="submit"
+              class="right"
+              (click)="incrementNum1Value(_step)"
+            >
+              <fa-icon [icon]="faArrowRight"></fa-icon>
+            </button>
+          </div>
+        </td>
+        <td>
+          <div class="input">
+            <button
+              type="submit"
+              class="left"
+              (click)="incrementNum2Value(-_step)"
+            >
+              <fa-icon [icon]="faArrowLeft"></fa-icon>
+            </button>
+            <input
+              type="number"
+              matInput
+              [(ngModel)]="_num2"
+              data-type="number"
+              class="inputField"
+              value="10"
+              disabled
+            />
+            <button
+              type="submit"
+              class="right"
+              (click)="incrementNum2Value(_step)"
+            >
+              <fa-icon [icon]="faArrowRight"></fa-icon>
+            </button>
+          </div>
+        </td>
+        <td><button class="buttons">Reset BG Processors</button></td>
+        <td><button class="buttons">Cookie Jar</button></td>
+        <td class="split">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
