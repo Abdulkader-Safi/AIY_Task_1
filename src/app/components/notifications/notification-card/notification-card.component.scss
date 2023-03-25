@@ -1,0 +1,21 @@
+.card-info {
+  background-color: #1d1d25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  border-radius: 7.5px;
+
+  div {
+    img {
+      border-radius: 7.5px;
+      width: 75px;
+      padding: 5px;
+    }
+
+    .dark {
+      color: #7b7a7f;
+    }
+  }
+}

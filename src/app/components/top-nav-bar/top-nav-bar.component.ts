@@ -1,5 +1,5 @@
-import { ElectronService } from './../../core/services/electron/electron.service';
 import { Component } from '@angular/core';
+import { ElectronService } from './../../core/services/electron/electron.service';
 
 @Component({
   selector: 'app-top-nav-bar',
@@ -7,14 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-nav-bar.component.scss'],
 })
 export class TopNavBarComponent {
+  // remote: Electron.App = electron.remote;
+
   constructor(private electron: ElectronService) {}
 
   closeWindow() {
-    // this.electron.windowPage.getPrimaryDisplay().close();
-    // this.electron.windowPage.getCurrentDisplay().close();
+    this.electron.ipcRenderer.send('window-closed');
   }
 
   minimizeWindow() {
-    // this.electron.windowPage.getCurrentDisplay().minimize();
+    this.electron.ipcRenderer.send('minimize-window');
   }
 }

@@ -19,6 +19,7 @@ import { DataFilterComponent } from './components/data-filter/data-filter.compon
 import { DataDigramComponent } from './components/data-digram/data-digram.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NotificationCardComponent } from './components/notifications/notification-card/notification-card.component';
 
 // AoT requires an exported function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
@@ -36,6 +37,7 @@ const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
     DataDigramComponent,
     NotificationsComponent,
     FooterComponent,
+    NotificationCardComponent,
   ],
   imports: [
     BrowserModule,

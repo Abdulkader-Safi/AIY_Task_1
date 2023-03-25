@@ -4,5 +4,22 @@
   height: 100%;
   font-size: large;
   margin: 0 10px;
-  background-color: red;
+  background-color: #15161b;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    width: 80%;
+    height: fit-content;
+    margin: 20px 0;
+  }
+
+  .cards {
+    width: 80%;
+    overflow-y: scroll;
+    height: auto;
+    margin-bottom: 10px;
+  }
 }

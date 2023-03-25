@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "label": "checkouts",
+      "data": [
+        1678371122633, 1678351122633, 1678371121633, 1678343121633,
+        1678375121633, 1678377121633
+      ],
+      "backgroundColor": "rgba(40,125,200,.5)",
+      "borderColor": "rgb(40,100,200)",
+      "fill": true,
+      "lineTension": 0,
+      "radius": 5
+    },
+    {
+      "label": "failures",
+      "data": [
+        1678371122633, 1678351122633, 1678372121633, 1678375121633,
+        1678377121633, 1678378121633
+      ],
+      "backgroundColor": "rgba(75,10,125,.5)",
+      "borderColor": "rgb(75,10,125)",
+      "fill": true,
+      "lineTension": 0.2,
+      "radius": 5
+    }
+  ]
+}

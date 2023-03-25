@@ -1,4 +1,4 @@
-import { app, BrowserWindow, screen } from 'electron';
+import { app, BrowserWindow, ipcMain, screen } from 'electron';
 import * as path from 'path';
 import * as fs from 'fs';
 
@@ -19,13 +19,18 @@ function createWindow(): BrowserWindow {
     autoHideMenuBar: true,
     resizable: false,
     // frame: false,
+
     webPreferences: {
       nodeIntegration: true,
-      // enableRemoteModule: true,
       allowRunningInsecureContent: serve,
-      contextIsolation: false, // false if you want to run e2e test with Spectron
+      contextIsolation: false, // false if you want to run e2e test with Spectral
+      preload: './preload.js',
     },
   });
+
+  // ipcMain.handle('close-window', (event, arg) => {
+  //   this.win.close();
+  // });
 
   if (serve) {
     const debug = require('electron-debug');
