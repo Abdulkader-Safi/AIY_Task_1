@@ -4,11 +4,11 @@
   height: 100%;
   font-size: large;
   margin: 0 10px;
-  // background-color: blue;
+  display: flex;
+  align-items: center;
 
   #area-chart {
     height: 100%;
-    // background-color: red;
     margin: auto;
   }
 }

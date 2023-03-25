@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-notification-card',
   templateUrl: './notification-card.component.html',
   styleUrls: ['./notification-card.component.scss'],
 })
-export class NotificationCardComponent {
+export class NotificationCardComponent implements OnInit {
+  @Input() productPrice = '11';
+  @Input() payment = 'true';
+
   photoPath = '../../../../assets/SB Dunk Neckface.png';
-  statusTitle = 'Successfully Check Out';
+  statusTitle = '';
   productName = 'Nike SB Dunk Low Pro';
   storeName = 'NeckFace';
-  productPrice = 11;
+
+  ngOnInit(): void {
+    this.statusTitle =
+      this.payment === 'true' ? 'Successfully Check Out' : 'Payment Error';
+  }
 }
