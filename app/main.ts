@@ -24,7 +24,6 @@ function createWindow(): BrowserWindow {
       nodeIntegration: true,
       allowRunningInsecureContent: serve,
       contextIsolation: false, // false if you want to run e2e test with Spectral
-      preload: './preload.js',
     },
   });
 

@@ -11,11 +11,7 @@ export class TopNavBarComponent {
 
   constructor(private electron: ElectronService) {}
 
-  closeWindow() {
-    this.electron.ipcRenderer.send('window-closed');
-  }
+  closeWindow() {}
 
-  minimizeWindow() {
-    this.electron.ipcRenderer.send('minimize-window');
-  }
+  minimizeWindow() {}
 }
