@@ -18,7 +18,7 @@ function createWindow(): BrowserWindow {
     height: 973,
     autoHideMenuBar: true,
     resizable: false,
-    // frame: false,
+    frame: false,
 
     webPreferences: {
       nodeIntegration: true,
@@ -27,9 +27,13 @@ function createWindow(): BrowserWindow {
     },
   });
 
-  // ipcMain.handle('close-window', (event, arg) => {
-  //   this.win.close();
-  // });
+  ipcMain.on('close', () => {
+    app.quit();
+  });
+
+  ipcMain.on('minimize', () => {
+    BrowserWindow.getFocusedWindow().minimize();
+  });
 
   if (serve) {
     const debug = require('electron-debug');
